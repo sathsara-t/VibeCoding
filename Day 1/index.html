@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Card</title>
+    <!-- Importing Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Page Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+
+        /* Profile Card Container */
+        .profile-card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            width: 350px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Profile Image Styling */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #f0f0f0;
+            margin-bottom: 20px;
+            background-color: #eee;
+            display: inline-block;
+        }
+
+        /* Text Styling */
+        .student-name {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 10px 0 5px;
+            color: #2d3436;
+        }
+
+        .student-stream {
+            font-size: 14px;
+            font-weight: 400;
+            color: #6c5ce7;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .student-bio {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #636e72;
+            margin-bottom: 25px;
+        }
+
+        /* Decorative Element */
+        .divider {
+            height: 2px;
+            width: 50px;
+            background: #6c5ce7;
+            margin: 0 auto 20px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <!-- Profile Image Placeholder -->
+        <img src="https://via.placeholder.com/150" alt="Student Profile" class="profile-img">
+        
+        <h1 class="student-name">Alex Johnson</h1>
+        <span class="student-stream">Information Technology</span>
+        
+        <div class="divider"></div>
+        
+        <p class="student-bio">
+            Passionate about full-stack development and UI/UX design. Currently exploring the depths of AI and cloud computing while building interactive web experiences.
+        </p>
+    </div>
+
+</body>
+</html>
